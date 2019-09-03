@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Best Pizza Ever!</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="This pafe is a webpage to order pizza">
+    <meta name="keywords" content="HTML5,udemy,learntocode">
+
+    <meta name="author" content="Donovan Ortiz">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Best Pizza Ever!</h1>
+      <h3>Come and get some homie.</h3>
+    </header>
+
+    <main>
+
+      <section id="media">
+        <video width="540" height="320" controls>
+          <source src="./pizza.mp4" type="video/mp4">
+          <source src="./video/pizza.ogg" type="video/ogg">
+          Your browser does not support HTML5.
+        </video><br />
+        <audio id="chasound" width="600" autoplay loop>
+          <source src="./chacha.mp3" type="audio/mp3">
+        </audio>
+      </section>
+
+      <section id="contact-form">
+        <h2>Place Order</h2>
+        <form method="POST" action="place-order.php">
+
+          <h4>Delivery</h4>
+          <input name="orderType" type="radio" value="delivery" /> Delivery<br />
+          <input name="orderType" type="radio" value="carryout" /> Carryout<br />
+
+          <h4>Address</h4>
+          <input name="address1" placeholder="Addess Line 1" class="lg-input"/><br />
+          <input name="address2" placeholder="Addess Line 2" class="lg-input"/><br />
+          <input name="city" placeholder="City" class="sm-input"/>
+          <input name="state" placeholder="State" class="sm-input"/><br />
+          <input name="zip" placeholder="Zip Code" class="sm-input"/><br />
+          <br />
+
+          <h4>Size</h4>
+          <select name="size">
+            <option value="12">12" - $13.99</option>
+            <option value="16">16" - $16.99</option>
+            <option value="18">18" - $19.99</option>
+            <option value="72">72" - $149.99</option>
+          </select>
+          <h4>Ingredients</h4>
+          <input name="ingredients" type="checkbox" value="pepperoni"/> Pepperoni<br />
+          <input name="ingredients" type="checkbox" value="bacon"/> Bacon<br />
+          <input name="ingredients" type="checkbox" value="sausage"/> Sausage<br />
+          <input name="ingredients" type="checkbox" value="ham"/> Ham<br />
+          <input name="ingredients" type="checkbox" value="mushrooms"/> Mushrooms<br />
+
+          <br />
+          <br />
+          <button type="submit">Place Order</button>
+        </form>
+      </section>
+
+      <footer>
+        <center>&copy; 2017
+          <br />
+          <a href="#">Terms of Service</a>
+        </center>
+      </footer>
+  </body>
+</html>
